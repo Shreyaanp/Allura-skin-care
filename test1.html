@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <style>
+            .root1 {
+  --container-width: 800px;
+  background-color: #c490d1;
+  --body-color: #1a1a1a;
+  --collapse-bg: #e5fcff;
+  --collapse-color: #1a1a1a;
+  --collapse-line-color: #585896;
+  --collapse-icon-color: #b8336a;
+  --collapse-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+details {
+  background: var(--collapse-bg);
+  color: var(--collapse-color);
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: var(--collapse-box-shadow);
+}
+
+summary {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+summary,
+.details-info {
+  padding: 1rem;
+}
+
+.details-info {
+  border-top: 1px solid var(--collapse-line-color);
+}
+
+summary .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.26s;
+  color: var(--collapse-icon-color);
+}
+
+details[open] summary .icon {
+  transform: rotate(180deg);
+}
+
+/* You could try to add some css animation here, but in the end, it doesn't work that well, uncomment the following to try it out */
+/*
+details[open] .details-info {
+  animation: growAndFadeIn .24s ease-out forwards;
+}*/
+
+/* some basic styling (added to the bottom for convenience) */
+* {
+  box-sizing: border-box;
+}
+
+.body1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.img1 {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 24px 0;
+}
+
+h2 {
+  margin: 0 0 8px 0;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+}
+
+a {
+  color: darkorange;
+}
+
+.container1 {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@keyframes growAndFadeIn {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  90% {
+    font-size: 1em;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container1 root1 body1" id="faq">
+            <details>
+              <summary>
+                Is it possible to solve skin or hair issues in   ?
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </summary>
+              <div class="details-info">
+                <p>Yes. Most skin diseases can be treated as picture is enough to diagnose for majority skin diseases. However, there are certain cases that must be examined in clinic. If we feel that your case can not be solved online, we will let you know that & will ask you to visit a good dermatologist nearby.</p>
+                <img class = "img1" src="/static/images/2011.i203.001.skincare cartoon.jpg" alt="" />
+
+              </div>
+            </details>
+            <details>
+              <summary>
+                What type of skin problems can be treated online ?
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </summary>
+              <div class="details-info">
+                <p>Most skin and hair problems including acne, pigmentation, tanning, vitiligo, rosacea, fungal infection, melasma, acanthosis nigricans, hair fall, allergy & urticaria etc can be treated online.</p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                How long will it take?
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </summary>
+              <div class="details-info">
+
+                <p>We usually reply within a few hours, maximum 24 hours. As it happens within a   chat, there is no wastage of time. You answer when you are free and we answer when we are free.</p>
+              </div>
+            </details>
+            <details>
+                <summary>
+                How this process will work?
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </summary>
+                <div class="details-info">
+
+                  <p>For our chat service, You start by sending us a   message. Then in most cases, we ask you to upload some photo.<br> Then we may send you some questions to answer. We usually start with one or two cream/ shampoo/ lotion etc that you may buy from any medical shops. We will share a full prescription if required.
+                    <br>Phone/video call is usually not required (very rarely may be required if felt so by the doctor). </p>
+                </div>
+              </details>
+              <details>
+                <summary>
+                  Are the doctors qualified here?
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </summary>
+                <div class="details-info">
+
+                  <p>All our doctors are MD in dermatology. Unlike many other portals, we do not include any alternate medicine doctors.</p>
+                </div>
+              </details>
+              <details>
+                <summary>
+                    How do I pay for my online visit ?
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </summary>
+                <div class="details-info">
+
+                  <p>You can start with 1 Rs only.<br>
+                     Then if full prescription is required, it will cost 149 INR*.<br>
+                      If your case does not require a prescription or it can not be solved online, no fee will be asked.
+<br>
+                    *5 USD or equivalent for international patients.</p>
+                </div>
+              </details>
+              <details>
+                <summary>
+                    How much is your fee ?
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </summary>
+                <div class="details-info">
+
+                  <p>For Indian patients, 149 INR / prescription. For international patients, it is 5 USD or equivalent at present.</p>
+                </div>
+              </details>
+              <details>
+                <summary>
+                    Is my photo etc secured in WhatsApp ?
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </summary>
+                <div class="details-info">
+
+                  <p>Yes. <br>WhatsApp is end to end encrypted. Moreover, if it’s a sensitive photo (like a photo of private parts), you can simply delete it from your end and it will be deleted from the chat. <br>However, for most normal consults, we recommend that you keep the photo so that it helps during the next visit.
+
+                    No photo is needed to use our intelligent tools service!</p>
+                </div>
+              </details>
+              <details>
+                <summary>
+                    What if I have doubts later?
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </summary>
+                <div class="details-info">
+
+                  <p>Once you send a message in WhatsApp, later you can alsways ask any questions in the WhatsApp thread.</p>
+                </div>
+              </details>
+          </div>
+    </body>
+</html>
