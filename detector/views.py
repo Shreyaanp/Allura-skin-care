@@ -223,7 +223,7 @@ def predict(request):
     elif  category==7:
         context = {
         "disease":"Skin care - latex allergy",
-        "disease":"""Latex is so common in the modern world, it may be difficult to completely avoid exposure. Still, there are some things you can do to reduce contact. These include:
+        "remedy":"""Latex is so common in the modern world, it may be difficult to completely avoid exposure. Still, there are some things you can do to reduce contact. These include:
 
         using non-latex gloves (such as vinyl gloves, powder-free gloves, hypoallergenic gloves, or glove liners)
         telling daycare and healthcare providers (including dentists) about any latex allergies
